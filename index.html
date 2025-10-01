@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Drowsiness Detection System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .start-button {
+            display: inline-block;
+            margin-top: 25px;
+        }
+        .start-button button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .start-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Driver Monitoring System 🚗</h1>
+        <p>This application uses computer vision to detect signs of driver drowsiness (closed eyes, excessive yawning) and driver absence (No Driver).</p>
+        <p>Ensure your webcam is accessible and pointed at the driver's face before proceeding.</p>
+
+        <div class="start-button">
+            <a href="/open_camera">
+                <button>START CAMERA & MONITORING</button>
+            </a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
+            The monitoring session will run in separate OpenCV windows until you press 'q' or close the windows.
+        </p>
+    </div>
+
+</body>
+</html>
